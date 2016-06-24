@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地图的分幅和编号</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div id="content">
+       <div class="content_left">
+        <h2>计算地图编号</h2>
+        <fieldset class="longitude_latitude">
+            <legend>经纬度</legend>
+            <label>经度：</label><br>
+            <label>度: </label><input type="text" value="">
+            <label>分: </label><input type="text" value="">
+            <label>秒: </label><input type="text" value=""><br><br>
+            <label>纬度：</label><br>
+            <label>度: </label><input type="text" value="">
+            <label>分: </label><input type="text" value="">
+            <label>秒: </label><input type="text" value=""><br>
+            <button type="submit" value="提交" id="calculate" onclick="calculate();">提交</button>
+        </fieldset>
+        <fieldset class="numbering">
+            <legend>地图编号：旧</legend>
+            <label>1:100万: </label><input type="text" value=""><br>
+            <label>1:50万:  </label><input type="text" value=""><br>
+            <label>1:25万:  </label><input type="text" value=""><br>
+            <label>1:10万:  </label><input type="text" value=""><br>
+            <label>1:5万:   </label><input type="text" value=""><br>
+            <label>1:2.5万: </label><input type="text" value=""><br>
+            <label>1:1万:   </label><input type="text" value=""><br>
+        </fieldset>
+        <fieldset class="numbering_new">
+            <legend>地图编号：新</legend>
+            <label>1:100万: </label><input type="text" value=""><br>
+            <label>1:50万:  </label><input type="text" value=""><br>
+            <label>1:25万:  </label><input type="text" value=""><br>
+            <label>1:10万:  </label><input type="text" value=""><br>
+            <label>1:5万:   </label><input type="text" value=""><br>
+            <label>1:2.5万: </label><input type="text" value=""><br>
+            <label>1:1万:   </label><input type="text" value=""><br>
+        </fieldset>
+    </div>
+
+    <div class="content_right">
+        <h2>计算经纬度范围</h2>
+        <fieldset class="cal_scope">
+            <legend>编号</legend>
+                <label style="width: 120px;">旧地图：</label>
+                <br>
+                <input style="margin-left: 120px;" type="text" value="">
+                <label>-</label><input type="text" value="">
+                <label>-</label><input type="text" value="">
+                <label>-</label><input type="text" value="">
+                <label>-</label><input type="text" value=""><br>
+                <label style="width: 120px;margin-top: 18px;">新地图：</label><br>
+                <input style="margin-left: 120px;" type="text" value="">
+                <label>-</label><input type="text" value="">
+                <label>-</label><input type="text" value="">
+                <label>-</label><input type="text" value="">
+                <label>-</label><input type="text" value=""><br>
+
+            <button type="submit" value="提交" id="calculate_2" onclick="calculate_2();">提交</button>
+        </fieldset>
+        <fieldset class="numbering_2">
+            <legend>地图编号：旧</legend>
+            <label>1:100万:经度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:50万:经度  </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:25万:经度  </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:10万:经度  </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:5万:经度   </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:2.5万:经度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:1万:经度   </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+        </fieldset>
+        <fieldset class="numbering_new_2">
+            <legend>地图编号：新</legend>
+            <label>1:100万:经度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:50万:经度  </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:25万:经度  </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:10万:经度  </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:5万:经度   </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:2.5万:经度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+            <label>1:1万:经度   </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value="">
+            <label>纬度 </label>
+            <input type="text" value="">
+            <h4>到</h4>
+            <input type="text" value=""><br>
+        </fieldset>
+    </div> 
+    </div>
+    
+</body>
+</html>

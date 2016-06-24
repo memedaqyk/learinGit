@@ -1,0 +1,92 @@
+*{
+    font-family: "Helvetica","Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+fieldset{
+    background: lightyellow;
+    border: 5px solid #73ffad;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.content_right fieldset{
+    width: 100%;
+}
+.longitude_latitude input{
+    width: 70px;
+}
+.content_left label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 8px;
+}
+.content_right label{
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 8px;
+}
+legend{
+    font-size: 1.3em;
+}
+#calculate, #calculate_2{
+    float: right;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    width: 66px;
+    height:40px;
+    font-size: 1.2em;
+    background-color: #cdffde;
+    border: 2px solid #73ffad;
+}
+.content_left{
+    margin-top: 26px;
+    float:left;
+}
+.content_right{
+    margin-top: 26px;
+    float: left;
+    margin-left: 26px;
+}
+h2{
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.content_right input{
+    width: 30px;
+    margin-left: 6px;
+}
+input{
+    margin-left: 6px;
+}
+.cal_scope label{
+    margin-left: 0px;
+}
+.numbering_2 label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 8px;
+}
+.numbering_new_2 label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+h4{
+    display: inline-block;
+    margin: 0 6px;
+}
+.numbering_2 input{
+    width: 66px;
+}
+.numbering_new_2 input{
+    width: 66px;
+}
+#content{
+    width: 1236px;
+    margin: 0 auto;
+}
