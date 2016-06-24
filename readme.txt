@@ -9,7 +9,11 @@ Creating a new branch is quick AND simple.
 >>>>>>> feature1
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 add merge.
+=======
+add merge. 
+>>>>>>> Stashed changes
 =======
 add merge. 
 >>>>>>> Stashed changes
